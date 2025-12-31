@@ -20,7 +20,12 @@
       "dialect": "postgres",
       "port": 5432,
       "logging": false,
-      "dialectOptions": {}
+      "dialectOptions": {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
+      }
+    }
     },
     "jwtSecret": "demo_node_js"
   }
