@@ -1,10 +1,10 @@
 {
   "local": {
     "db": {
-      "host": "localhost",
       "username": "postgres",
-      "password": "123456",
-      "database": "demo_node_js",
+      "password": "demo-node-js",
+      "database": "demo-node-js",
+      "host": "demo-node-js.cvesga2202lk.ap-south-1.rds.amazonaws.com",
       "dialect": "postgres",
       "port": 5432,
       "logging": false
