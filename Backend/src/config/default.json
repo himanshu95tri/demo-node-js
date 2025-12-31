@@ -16,7 +16,7 @@
       "username": "postgres",
       "password": "demo-node-js",
       "database": "demonodejs",
-      "host": "demo-node-js.cvesga2202lk.ap-south-1.rds.amazonaws.com",
+      "host": "demonodejs.cvesga2202lk.ap-south-1.rds.amazonaws.com",
       "dialect": "postgres",
       "port": 5432,
       "logging": false,
