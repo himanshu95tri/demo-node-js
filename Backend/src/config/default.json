@@ -14,9 +14,9 @@
   "development": {
     "db": {
       "username": "postgres",
-      "password": "triCreatorPstGrsDev4321!5#%*5",
-      "database": "tricreatordevdb",
-      "host": "tricreatordevdb.cjeyiae0on9b.us-east-2.rds.amazonaws.com",
+      "password": "demo-node-js",
+      "database": "demo-node-js",
+      "host": "demo-node-js.cvesga2202lk.ap-south-1.rds.amazonaws.com",
       "dialect": "postgres",
       "port": 5432,
       "logging": false,
