@@ -1,0 +1,9 @@
+{
+    "apps": [
+        {
+            "name": "mc_swagger",
+            "script": "npm",
+            "args" : "run start"
+        }
+    ]
+}

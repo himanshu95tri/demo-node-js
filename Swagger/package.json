@@ -1,0 +1,40 @@
+{
+  "name": "swagger",
+  "version": "1.0.0",
+  "description": "swagger",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon --exec babel-node -- server.js",
+    "start-development": "pm2 start --interpreter babel-node server.js --name=triCreatorSwagger"
+  },
+  "author": "Himanshu Patel",
+  "license": "ISC",
+  "dependencies": {
+    "config": "^3.3.6",
+    "continuation-local-storage": "^3.2.1",
+    "express": "~4.17.1",
+    "express-handlebars": "^6.0.6",
+    "express-http-context": "^1.2.3",
+    "int": "^0.2.0",
+    "npm": "^11.6.2",
+    "request": "^2.88.2",
+    "rootpath": "~0.1.2",
+    "swagger-jsdoc": "^3.5.0",
+    "swagger-ui-express": "^4.1.2",
+    "uuidv4": "^6.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "7.7.4",
+    "@babel/node": "7.7.4",
+    "@babel/preset-env": "7.7.4",
+    "jsdoc": "^3.6.3",
+    "morgan": "^1.9.1",
+    "nodemon": "^2.0.22"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  }
+}

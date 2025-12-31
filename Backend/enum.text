@@ -1,0 +1,18 @@
+
+Universal Enum
+degreeLevel / highest qualification => 0 => Not selected, 1 => High School, 2 => Diploma, 3 => Bachelor's, 4 => Master's, 5 => Doctorate
+
+User Enum
+gender =>  0 => Not selected, 1 => Male, 2 => Female, 3 => Other
+status =>  0 => NOt selected, 1 => Looking for study options, 2 => Open to offers, 3 => Application in progress, 4 => Accepted, 5 => Not currently looking 
+visibility =>  0 => public, 1 => private, 3 => university staff, 3 => recruitment agencies, 4 => both (university staff & recruitment agencies)
+
+
+
+
+University Enum
+
+
+Recruiter Enum
+
+

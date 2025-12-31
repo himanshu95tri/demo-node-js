@@ -1,0 +1,100 @@
+paths:
+  /web/v1/auth/register:
+    post:
+      tags:
+        - Auth Module 
+      summary: Register new user
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/RegisterRequest"
+      responses:
+        201:
+          description: User registered successfully
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/RegisterResponse"
+        400:
+          description: Validation error
+
+  /web/v1/auth/login:
+    post:
+      tags:
+        - Auth Module
+      summary: Login user
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/LoginRequest"
+      responses:
+        200:
+          description: Login success
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/LoginResponse"
+        401:
+          description: Invalid credentials
+
+components:
+  schemas:
+    RegisterRequest:
+      type: object
+      required:
+        - name
+        - email
+        - password
+      properties:
+        name:
+          type: string
+          example: Himanshu
+        email:
+          type: string
+          example: test@mail.com
+        password:
+          type: string
+          example: 123456
+
+    RegisterResponse:
+      type: object
+      properties:
+        message:
+          type: string
+          example: User registered
+        user:
+          type: object
+          properties:
+            id:
+              type: string
+              example: 3fa85f64-5717-4562-b3fc-2c963f66afa6
+            email:
+              type: string
+              example: test@mail.com
+
+    LoginRequest:
+      type: object
+      required:
+        - email
+        - password
+      properties:
+        email:
+          type: string
+          example: test@mail.com
+        password:
+          type: string
+          example: 123456
+
+    LoginResponse:
+      type: object
+      properties:
+        message:
+          type: string
+          example: Login success
+        token:
+          type: string
+          example: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...

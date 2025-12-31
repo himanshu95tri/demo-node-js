@@ -1,0 +1,33 @@
+demo_node_js app
+
+download node js
+1- https://nodejs.org/en/download -> select version -> v18.17.0 -> scroll down and download windows installer .msi
+2- download installation setup
+3- it will install globally
+
+start backend
+1- cd Backend
+2- npm install
+3- npm run dev
+
+start swagger
+1- cd Swagger
+2- npm install
+3- npm run dev
+
+setup db
+1- download pgAdmin 4 (windows - https://www.pgadmin.org/download/pgadmin-4-windows/) (macOS - https://www.pgadmin.org/download/pgadmin-4-macos/)
+2- install all version
+3 - open server with you password
+4 - open postgreSql 16 and create a db name "demo_node_js"
+
+run migration
+1- cd Backend
+2- cd src
+3- npx sequelize db:migrate --env local
+4- it will create all the tables
+
+run swagger
+1- open your system browser
+2- pase below - http://localhost:3002/api#
+3- run any api by selecting local server in each api

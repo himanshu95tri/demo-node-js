@@ -1,0 +1,26 @@
+{
+  "local": {
+    "username": "postgres",
+    "password": "123456",
+    "database": "demo_node_js",
+    "host": "localhost",
+    "dialect": "postgres",
+    "port": 5432,
+    "logging": false
+  },
+  "development": {
+    "username": "postgres",
+    "password": "triCreatorPstGrsDev4321!5#%*5",
+    "database": "tricreatordevdb",
+    "host": "tricreatordevdb.cjeyiae0on9b.us-east-2.rds.amazonaws.com",
+    "dialect": "postgres",
+    "port": 5432,
+    "logging": false,
+    "dialectOptions": {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
+      }
+    }
+  }
+}

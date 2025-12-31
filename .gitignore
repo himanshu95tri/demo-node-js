@@ -1,0 +1,9 @@
+Backend/node_modules/
+Swagger/node_modules/
+
+Backend/package-lock.json
+Swagger/package-lock.json
+package-lock.json
+# exception to the rule
+!db_dump/.gitkeep
+!logs/.gitkeep
