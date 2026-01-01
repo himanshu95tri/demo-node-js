@@ -17,7 +17,7 @@ const sequelize = new Sequelize(database, username, password, {
     dialect,
     port,
     logging,
-    ...(env !== "local" && {
+    ...(env !== "development" && {
         dialectOptions: {
             ssl: {
                 require: true,

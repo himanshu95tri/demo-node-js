@@ -14,9 +14,9 @@
   "development": {
     "db": {
       "username": "postgres",
-      "password": "demo-node-js",
-      "database": "demonodejs",
-      "host": "demonodejs.cvesga2202lk.ap-south-1.rds.amazonaws.com",
+      "password": "hello123",
+      "database": "nodeproject",
+      "host": "nodeproject.cvesga2202lk.ap-south-1.rds.amazonaws.com",
       "dialect": "postgres",
       "port": 5432,
       "logging": false,
