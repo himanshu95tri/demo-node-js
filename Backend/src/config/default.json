@@ -1,5 +1,5 @@
 {
-  "local": {
+  "development": {
     "db": {
       "host": "localhost",
       "username": "postgres",
@@ -11,7 +11,7 @@
     },
     "jwtSecret": "demo_node_js"
   },
-  "development": {
+  "local": {
     "db": {
       "username": "postgres",
       "password": "hello123",
@@ -19,13 +19,7 @@
       "host": "nodeproject.cvesga2202lk.ap-south-1.rds.amazonaws.com",
       "dialect": "postgres",
       "port": 5432,
-      "logging": false,
-      "dialectOptions": {
-      "ssl": {
-        "require": true,
-        "rejectUnauthorized": false
-      }
-    }
+      "logging": false
     },
     "jwtSecret": "demo_node_js"
   }

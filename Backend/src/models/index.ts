@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const basename = path.basename(__filename);
 const Sequelize = require('sequelize');
-const env = process.env.NODE_ENV || "development";
+const env = process.env.NODE_ENV || "local";
 const config = require("../config/default.json")[env];
 const { host, username, password, database, dialect, port, logging } = config.db;
 
@@ -17,7 +17,7 @@ const sequelize = new Sequelize(database, username, password, {
     dialect,
     port,
     logging,
-    ...(env !== "development" && {
+    ...(env !== "local" && {
         dialectOptions: {
             ssl: {
                 require: true,
