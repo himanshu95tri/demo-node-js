@@ -15,8 +15,8 @@
     "db": {
       "username": "postgres",
       "password": "hello123",
-      "database": "nodeproject",
-      "host": "nodeproject.cvesga2202lk.ap-south-1.rds.amazonaws.com",
+      "database": "nodejsdb",
+      "host": "nodejsdb.cvesga2202lk.ap-south-1.rds.amazonaws.com",
       "dialect": "postgres",
       "port": 5432,
       "logging": false,
