@@ -1,5 +1,5 @@
 {
-  "development": {
+  "local": {
     "db": {
       "host": "localhost",
       "username": "postgres",
@@ -11,7 +11,7 @@
     },
     "jwtSecret": "demo_node_js"
   },
-  "local": {
+  "development": {
     "db": {
       "username": "postgres",
       "password": "hello123",

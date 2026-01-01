@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const basename = path.basename(__filename);
 const Sequelize = require('sequelize');
-const env = process.env.NODE_ENV || "local";
+const env = process.env.NODE_ENV || "development";
 const config = require("../config/default.json")[env];
 const { host, username, password, database, dialect, port, logging } = config.db;
 
@@ -26,6 +26,7 @@ const sequelize = new Sequelize(database, username, password, {
         }
     })
 });
+
 console.log("Database: ", database, "Username: ", username, "password: ", password, "host: ", host, 'port', port)
 try {
     sequelize.authenticate();
